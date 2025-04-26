@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poppi - Pagamentos Fofos</title>
+  <title>Poppi - Poupancinha Fofa</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
   <style>
     body {
@@ -16,34 +16,42 @@
     }
     h1 {
       color: #ff6f61;
+      font-size: 2.2em;
     }
     .intro {
-      font-size: 1.2em;
+      font-size: 1.3em;
       margin-bottom: 30px;
     }
     .item {
-      background: #fff;
+      background: #ffffff;
       border: 2px dashed #ffcc80;
-      border-radius: 12px;
-      padding: 15px;
-      margin: 15px auto;
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px auto;
       max-width: 400px;
-      box-shadow: 2px 2px 8px #f4c27b;
+      box-shadow: 3px 3px 10px #f4c27b;
+      transition: transform 0.3s ease;
+    }
+    .item:hover {
+      transform: scale(1.05);
     }
     .item-title {
       font-weight: bold;
-      font-size: 1.1em;
+      font-size: 1.4em;
     }
     .value {
       margin: 10px 0;
+      font-size: 1.1em;
     }
     button {
       background-color: #ff6f61;
       color: white;
       border: none;
-      padding: 10px 15px;
-      border-radius: 8px;
+      padding: 10px 20px;
+      border-radius: 10px;
       cursor: pointer;
+      font-size: 1em;
+      margin-top: 10px;
     }
     button:hover {
       background-color: #e85a4f;
@@ -51,27 +59,28 @@
     .flamengo {
       background: linear-gradient(90deg, #e30613 50%, #000 50%);
       color: white;
-      padding: 15px;
-      margin-top: 30px;
-      border-radius: 10px;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 12px;
       border: 2px solid #e30613;
       max-width: 400px;
       margin-left: auto;
       margin-right: auto;
       font-weight: bold;
+      font-size: 1.2em;
     }
     .poppi-img {
-      max-width: 200px;
+      max-width: 220px;
       margin: 0 auto 30px;
       animation: wiggle 2s infinite;
     }
     .final {
-      margin-top: 40px;
-      font-size: 1.1em;
+      margin-top: 50px;
+      font-size: 1.2em;
       background: #fff3cd;
       border: 1px solid #ffeeba;
-      padding: 15px;
-      border-radius: 10px;
+      padding: 20px;
+      border-radius: 12px;
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
@@ -87,35 +96,23 @@
   <img src="poppi-ilustracao.png" alt="Poppi" class="poppi-img">
   <h1>Olá! Prazer! Meu nome é Poppi!</h1>
   <p class="intro">
-    Recebo muitos elogios e carícias de todo mundo! É tanto que pensei que, se eu cobrasse por cada um deles, dava até pra fazer uma poupancinha! 
+    Estive pensando que se eu ganhasse 1 real pra cada elogio ou carícia, dava até pra montar uma poupancinha! 🐶
   </p>
 
   <div class="item">
-    <div class="item-title">Que bonitinho! — R$ 1,00</div>
+    <div class="item-title">Um elogio! 🐶✨ — R$ 1,00</div>
     <div class="value">Código Pix:</div>
-    <button onclick="copyToClipboard('00020126510014BR.GOV.BCB.PIX0111096648716800214Que bonitinho!52040000530398654041.005802BR5925Ana Carolina Figueiredo F6009SAO PAULO62140510lLkhyrasXQ6304069A')">Copiar Código Pix</button>
+    <button onclick="copyToClipboard('00020126560014BR.GOV.BCB.PIX0111096648716800219\"Aí que bonitinho!\"52040000530398654041.005802BR5925Ana Carolina Figueiredo F6009SAO PAULO621405103ECx6JXt9t6304E0CC')">Pagar a Poppi!</button>
   </div>
 
   <div class="item">
-    <div class="item-title">Qual é o nome? — R$ 2,00</div>
+    <div class="item-title">Uma carícia! 🐶🎉 — R$ 2,00</div>
     <div class="value">Código Pix:</div>
-    <button onclick="copyToClipboard('00020126510014BR.GOV.BCB.PIX0111096648716800214Qual é o nome?52040000530398654042.005802BR5925Ana Carolina Figueiredo F6009SAO PAULO62140510vpoZWBeJu163047FA9')">Copiar Código Pix</button>
-  </div>
-
-  <div class="item">
-    <div class="item-title">Quantos anos ela tem? — R$ 3,00</div>
-    <div class="value">Código Pix:</div>
-    <button onclick="copyToClipboard('00020126580014BR.GOV.BCB.PIX0111096648716800221Quantos anos ela tem?52040000530398654043.005802BR5925Ana Carolina Figueiredo F6009SAO PAULO62140510itTMcfrKtJ63043F3D')">Copiar Código Pix</button>
-  </div>
-
-  <div class="item">
-    <div class="item-title">Posso fazer carinho? — R$ 4,00</div>
-    <div class="value">Código Pix:</div>
-    <button onclick="copyToClipboard('00020126570014BR.GOV.BCB.PIX0111096648716800220Posso fazer carinho?52040000530398654044.005802BR5925Ana Carolina Figueiredo F6009SAO PAULO6214051043mjhg1A1b63044C85')">Copiar Código Pix</button>
+    <button onclick="copyToClipboard('00020126510014BR.GOV.BCB.PIX0111096648716800214Qual é o nome?52040000530398654042.005802BR5925Ana Carolina Figueiredo F6009SAO PAULO62140510vpoZWBeJu163047FA9')">Pagar a Poppi!</button>
   </div>
 
   <div class="flamengo">
-    Torcedor do Flamengo? <br> Poppi deixa você aproveitar tudo de graça! Hau hau hau!
+    Torcedor do Flamengo? <br> Poppi deixa você aproveitar tudo de graça! Hau hau hau! ❤️🖤
   </div>
 
   <div class="final">
