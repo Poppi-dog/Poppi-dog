@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poppi - Pagamentos Fofos</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fff6e5;
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #ff6f61;
+    }
+    .intro {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    .item {
+      background: #fff;
+      border: 2px dashed #ffcc80;
+      border-radius: 12px;
+      padding: 15px;
+      margin: 15px auto;
+      max-width: 400px;
+      box-shadow: 2px 2px 8px #f4c27b;
+    }
+    .item-title {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .value {
+      margin: 10px 0;
+    }
+    button {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e85a4f;
+    }
+    .flamengo {
+      background-color: #fce4ec;
+      padding: 15px;
+      margin-top: 30px;
+      border-radius: 10px;
+      border: 1px solid #f48fb1;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .poppi-img {
+      max-width: 200px;
+      margin: 0 auto 30px;
+      animation: wiggle 2s infinite;
+    }
+    .final {
+      margin-top: 40px;
+      font-size: 1.1em;
+      background: #fff3cd;
+      border: 1px solid #ffeeba;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(0deg); }
+      25% { transform: rotate(2deg); }
+      75% { transform: rotate(-2deg); }
+    }
+  </style>
+</head>
+<body>
+  <img src="poppi-cartoon.png" alt="Poppi" class="poppi-img">
+  <h1>Olá! Prazer! Meu nome é Poppi!</h1>
+  <p class="intro">
+    Recebo muitos elogios e carícias de todo mundo! É tanto que pensei que, se eu cobrasse por cada um deles, dava até pra fazer uma poupancinha! 
+  </p>
+
+  <div class="item">
+    <div class="item-title">Que bonitinho! — R$ 1,00</div>
+    <div class="value">Código Pix:</div>
+    <button onclick="copyToClipboard('00020126510014BR.GOV.BCB.PIX0111096648716800214Que bonitinho!52040000530398654041.005802BR5925Ana Carolina Figueiredo F6009SAO PAULO62140510lLkhyrasXQ6304069A')">Copiar Código Pix</button>
+  </div>
+
+  <div class="item">
+    <div class="item-title">Qual é o nome? — R$ 2,00</div>
+    <div class="value">Código Pix:</div>
+    <button onclick="copyToClipboard('00020126510014BR.GOV.BCB.PIX0111096648716800214Qual é o nome?52040000530398654042.005802BR5925Ana Carolina Figueiredo F6009SAO PAULO62140510vpoZWBeJu163047FA9')">Copiar Código Pix</button>
+  </div>
+
+  <div class="item">
+    <div class="item-title">Quantos anos ela tem? — R$ 3,00</div>
+    <div class="value">Código Pix:</div>
+    <button onclick="copyToClipboard('00020126580014BR.GOV.BCB.PIX0111096648716800221Quantos anos ela tem?52040000530398654043.005802BR5925Ana Carolina Figueiredo F6009SAO PAULO62140510itTMcfrKtJ63043F3D')">Copiar Código Pix</button>
+  </div>
+
+  <div class="item">
+    <div class="item-title">Posso fazer carinho? — R$ 4,00</div>
+    <div class="value">Código Pix:</div>
+    <button onclick="copyToClipboard('00020126570014BR.GOV.BCB.PIX0111096648716800220Posso fazer carinho?52040000530398654044.005802BR5925Ana Carolina Figueiredo F6009SAO PAULO6214051043mjhg1A1b63044C85')">Copiar Código Pix</button>
+  </div>
+
+  <div class="flamengo">
+    <strong>Torcedor do Flamengo?</strong><br>
+    Poppi deixa você aproveitar tudo <strong>de graça</strong>! Hau hau hau!
+  </div>
+
+  <div class="final">
+    Muito obrigada pelo seu carinho!<br>
+    Agora pode pegar uma balinha na minha bolsinha! 🐶 Hau hau hau!
+  </div>
+
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Código Pix copiado com sucesso!");
+      });
+    }
+  </script>
+</body>
+</html>
